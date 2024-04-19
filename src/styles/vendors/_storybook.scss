@@ -1,0 +1,17 @@
+// Base
+@import '@/styles/base/reset';
+@import '@/global.scss';
+
+.theme--light.v-application,
+.page {
+  background: unset !important;
+  background-color: unset !important;
+}
+
+.v-main.storybook {
+  padding: 1rem !important;
+}
+
+.sb-show-main {
+  background: $blue-8;
+}

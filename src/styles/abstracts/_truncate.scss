@@ -1,0 +1,13 @@
+.truncated-text,
+.truncated-text-forced {
+  text-overflow: unset;
+  line-break: anywhere;
+  -webkit-line-clamp: 1;
+
+  overflow: hidden;
+  white-space: wrap;
+
+  &.text-on-hover {
+    text-overflow: ellipsis !important;
+  }
+}

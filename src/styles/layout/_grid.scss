@@ -1,0 +1,19 @@
+@for $count from 1 to 20 {
+  $count: $count * 5;
+  .is-#{$count} {
+    width: calc(#{$count}% - 15px);
+  }
+  $count: $count + 5;
+}
+.is-one-third {
+  width: calc(33.333% - 15px);
+}
+.is-100 {
+  width: 100%;
+}
+.container-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 20px;
+}

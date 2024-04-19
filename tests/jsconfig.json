@@ -1,0 +1,19 @@
+{
+  "extends": "../jsconfig.json",
+
+  "compilerOptions": {
+    "types": ["node", "jest"]
+  },
+  "include": [
+    "../node_modules/@types/jest",
+    "./unit/**/*",
+    "./env.setup.js",
+    "./main.setup.js",
+    "./utils.js"
+  ],
+  "exclude": [],
+
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
+}

@@ -1,0 +1,66 @@
+@import '@/global';
+
+::v-deep .v-snack__content {
+  padding: 0;
+}
+::v-deep .v-snack__wrapper {
+  margin-left: 4rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0px 4px 9px $shadow-1 !important;
+  border-radius: 6px;
+}
+
+.alert-container {
+  display: flex;
+  padding-top: 0.875rem;
+  font-size: 0.75rem;
+  color: $neutral-1;
+
+  &-info {
+    margin-left: 0.625rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem;
+    &-title {
+      margin-bottom: 0.625rem;
+      span {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+      }
+      i {
+        font-size: 0.5rem;
+        vertical-align: middle;
+        color: $neutral;
+      }
+    }
+    &-message {
+      margin-bottom: 0.875rem;
+    }
+    &-footer {
+      margin-bottom: 0.875rem;
+    }
+  }
+  &-close {
+    align-self: flex-start;
+  }
+}
+
+.left-border {
+  border-left: 0.1875rem solid;
+  border-radius: 4px;
+}
+.border-success {
+  border-color: rgba($green-7, 90%);
+}
+.success {
+  background-color: rgba($green-7, 90%);
+}
+
+.border-error {
+  border-color: $red-color;
+}
+.error {
+  background-color: $red-color;
+}

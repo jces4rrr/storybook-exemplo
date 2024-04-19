@@ -1,0 +1,16 @@
+@charset 'UTF-8';
+
+// Abstracts
+@import 'styles/abstracts/mixins', 'styles/abstracts/variables';
+@import 'styles/scss/colors';
+@import 'styles/scss/fonts';
+
+// Components
+@import 'styles/scss/buttons';
+@import 'styles/scss/effects';
+@import 'styles/scss/lateralMenu';
+@import 'styles/scss/scrollbar';
+@import 'styles/scss/tooltip';
+
+// Vendors
+@import '~vuetify/src/styles/settings/_variables';

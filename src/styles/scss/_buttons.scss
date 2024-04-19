@@ -1,0 +1,39 @@
+@mixin button($color, $bg-color) {
+  border-radius: 7px;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color !important;
+  color: $color !important;
+  font-weight: 600;
+  text-transform: none;
+  font-size: 0.875rem !important;
+}
+
+@mixin elements {
+  padding: 0.25rem;
+  margin: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+}
+
+.context {
+  @include elements();
+  background: $element-bg-1;
+}
+
+.objective {
+  @include elements();
+  background: $element-bg-2;
+}
+
+.key-result {
+  @include elements();
+  background: $element-bg-3;
+}
+
+.initiative {
+  @include elements();
+  background: $element-bg-4;
+}

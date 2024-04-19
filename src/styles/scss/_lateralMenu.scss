@@ -1,0 +1,36 @@
+%menu-item-show-more {
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  color: $neutral-3;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  i {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+  }
+}
+
+%menu-item-empty {
+  padding: 0 0 0 21px;
+
+  p {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    color: $neutral-5;
+    padding-right: 30px;
+    margin: 0 0 6px;
+  }
+
+  a {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: $primary;
+    text-decoration: none;
+    width: 100%;
+  }
+}

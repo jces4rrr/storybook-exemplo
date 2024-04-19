@@ -1,0 +1,252 @@
+@mixin tooltip($text) {
+  position: relative;
+
+  &::before {
+    font-size: 11px;
+    display: none;
+    width: 85%;
+    background-color: $neutral-1;
+    color: $neutral;
+    content: attr($text);
+    position: absolute;
+    left: 85%;
+    bottom: calc(100% + 5px);
+    border-radius: 6px;
+    padding: 10px;
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    bottom: 100%;
+    left: 90%;
+    border-top-color: $neutral-1;
+    border-bottom-width: 0;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    display: inline-block;
+  }
+}
+
+@mixin tooltip-quick-view-right {
+  cursor: default;
+  position: absolute;
+  visibility: hidden;
+  z-index: 11;
+  width: 314px;
+  left: 100%;
+  bottom: calc(100% - 178px);
+  border-radius: 6px;
+  box-shadow: 0 4px 9px rgb(0 0 0 / 5%);
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: transparent;
+  }
+}
+
+@mixin tooltip-up($text) {
+  position: relative;
+
+  &::before {
+    font-size: 0.75rem;
+    display: none;
+    width: 50%;
+    background-color: $neutral-1;
+    color: $neutral;
+    content: attr($text);
+    position: absolute;
+    left: 85%;
+    bottom: calc(100% + 5px);
+    border-radius: 6px;
+    padding: 10px;
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    bottom: 100%;
+    left: 95%;
+    border-top-color: $neutral-1;
+    border-bottom-width: 0;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    display: inline-block;
+  }
+}
+
+@mixin tooltip-icon($text) {
+  position: relative;
+
+  &::before {
+    z-index: 99;
+    font-size: 0.75rem;
+    display: none;
+    width: 10rem;
+    background-color: $neutral-1;
+    color: $neutral;
+    content: attr($text);
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 5px);
+    border-radius: 6px;
+    padding: 0.635rem;
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    bottom: 100%;
+    left: 40%;
+    border-top-color: $neutral-1;
+    border-bottom-width: 0;
+  }
+
+  &:hover::after,
+  &:hover::before {
+    display: inline-block;
+  }
+}
+
+@mixin tooltip-all-porpuse(
+  $text,
+  $width: 10rem,
+  $font-size: 0.75rem,
+  $z-index: 99,
+  $margin-top: 100%,
+  $margin-right: 100%,
+  $margin-left: 100%,
+  $carret-position: 40%,
+  $body-position: 0,
+  $top: false,
+  $bottom: false,
+  $left: false,
+  $right: false
+) {
+  position: relative;
+
+  @if $top {
+    &::before {
+      z-index: $z-index !important;
+      font-size: $font-size;
+      display: none;
+      width: $width;
+      background-color: $neutral-1;
+      color: $neutral;
+      content: attr($text);
+      position: absolute;
+      left: $body-position;
+      bottom: calc($margin-top + 5px);
+      border-radius: 6px;
+      padding: 0.635rem;
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      bottom: $margin-top;
+      left: $carret-position;
+      border-top-color: $neutral-1;
+      border-bottom-width: 0;
+    }
+  } @else if $right {
+    &::before {
+      z-index: $z-index;
+      font-size: $font-size;
+      display: none;
+      width: $width;
+      background-color: $neutral-1;
+      color: $neutral;
+      content: attr($text);
+      position: absolute;
+      left: calc($margin-right + 5px);
+      bottom: $body-position;
+      border-radius: 6px;
+      padding: 0.635rem;
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      bottom: $carret-position;
+      left: $margin-right;
+      border-right-color: $neutral-1;
+      border-left-width: 0;
+    }
+  } @else if $left {
+    &::before {
+      z-index: $z-index;
+      font-size: $font-size;
+      display: none;
+      width: $width;
+      background-color: $neutral-1;
+      color: $neutral;
+      content: attr($text);
+      position: absolute;
+      right: calc($margin-left + 5px);
+      bottom: $body-position;
+      border-radius: 6px;
+      padding: 0.635rem;
+    }
+
+    &::after {
+      display: none;
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 5px solid transparent;
+      bottom: $carret-position;
+      right: $margin-left;
+      border-left-color: $neutral-1;
+      border-right-width: 0;
+    }
+  } @else if $bottom {
+  }
+
+  &:hover::after,
+  &:hover::before {
+    display: inline-block;
+  }
+}
+
+@mixin tooltip-vuetify() {
+  line-break: anywhere;
+  opacity: 1 !important;
+  color: $neutral;
+  background-color: $neutral-1 !important;
+  padding: 0 !important;
+  border-radius: 0.375rem !important;
+
+  font-size: 0.625rem !important;
+  line-height: 0.813rem !important;
+}

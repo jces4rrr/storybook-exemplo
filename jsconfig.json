@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/tests/*": ["tests/*"],
+      "@/*": ["src/*"]
+    },
+
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "ScriptHost"],
+    "target": "ES2021",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    ".storybook",
+    "**/*.spec.js",
+    "coverage-cypress",
+    "coverage-jest",
+    "coverage",
+    "dist"
+  ],
+  "vueCompilerOptions": {
+    "target": 2.7
+  }
+}

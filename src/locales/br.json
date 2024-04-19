@@ -1,0 +1,8 @@
+{
+  "locale": "pt",
+  "ui-components": {
+    "alert": {
+      "title": "Meu Título"
+    }
+  }
+}

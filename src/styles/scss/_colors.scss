@@ -1,0 +1,287 @@
+$bg-1: #f3f6fb;
+$bg-2: #f3f3f3;
+$bg-3: #fee;
+$bg-4: #ffff;
+$black-1: #0a0a09;
+$black-2: #0a0a09;
+$black-3: #0000001a;
+$black-o6: rgba(0, 0, 0, 0.541);
+$black: black;
+$blue-1: #1e52d9;
+$blue-2: #62dfc9;
+$blue-3: #17a2b8;
+$blue-4: #008ffb;
+$blue-6: #f2f3fd;
+$blue-7: #6390f9;
+$blue-8: #eef2fa;
+$blue-9: #5adaea;
+$blue-10: #3cbecd;
+$blue-11: #3a68de;
+$blue-12: #32b3fc;
+$blue-13: #cdf;
+$blue-color: #2392b5;
+$element-bg-1: #fefde6;
+$element-bg-2: #e6eefe;
+$element-bg-3: #feefe6;
+$element-bg-4: #f6e6fe;
+$gradient: radial-gradient(#000 68%, #0000 71%);
+$gray-2: #9e9e9e;
+$gray-color-10: #dfdcdf;
+$gray-color-11: #f5f5f5;
+$gray-color-2: #eee;
+$gray-color-3: #6d7580;
+$gray-color-4: #ddd;
+$gray-color-5: #f2f2f2;
+$gray-color-6: #73757d;
+$gray-color-7: #374957;
+$gray-color-8: #ececec;
+$gray-color-9: #c4c4c4;
+$gray-color: #ebeef2;
+$green-1: #12c130;
+$green-10: #f1faf4;
+$green-11: #067d29;
+$green-12: #c7eed3;
+$green-13: #6bdef8;
+$green-14: #0c9e42;
+$green-2: #08864a;
+$green-3: #19ab4f;
+$green-4: #027932;
+$green-5: #00e396;
+$green-6: #e6fee6;
+$green-7: #09b930;
+$green-8: #49cd76;
+$green-9: #e5f9ff;
+$green-15: #47cf86;
+$green-16: #dff9df;
+$green-color: #0ab057;
+$green-light: #2ecd6f;
+$green-lighten-1: #e6ffe6;
+$green-success-background: #dafce0;
+$gray-color-12: #7a7a7a;
+$neutral-1: #2c3a4b;
+$neutral-10: #f4f6f9;
+$neutral-11: #dadada;
+$neutral-12: #e5e5e5;
+$neutral-13: #dedede;
+$neutral-14: #f4f4f4;
+$neutral-15: #fafafa;
+$neutral-16: #f1f1f1;
+$neutral-2: #394452;
+$neutral-3: #545d69;
+$neutral-4: #545d69;
+$neutral-5: #858c94;
+$neutral-6: #a5abb3;
+$neutral-7: #dadee3;
+$neutral-8: #ebeef2;
+$neutral-9: #f4f6f9;
+$neutral: #fff;
+$orange-3: #f9ab63;
+$orange-4: #ff8946;
+$orange-5: #ffa012;
+$orange-6: #fc9332;
+$orange-7: #ffd390;
+$orange-8: #e28741;
+$orange-color-2: #ffb55e;
+$orange-color: #fb9217;
+$orange-light: #ff9230;
+$pink-1: #fc4a69;
+$pink-2: #ff4560;
+$pink-3: #fc6394;
+$pink-4: #ef3c8a;
+$primary-70: #dd0041b3;
+$primary-90: #dd0041e6;
+$primary-background: #ffe5e5;
+$primary-faded: #ffeeee;
+$primary: #dd0041;
+$purple-1: #9363f9;
+$purple-2: #ae2fdb;
+$purple-3: #974cbe;
+$purple-4: #813bbe;
+$purple: #7a5aff;
+$red-1: #ed3126;
+$red-10: #f66363;
+$red-11: #b82505;
+$red-12: #ffd2da;
+$red-2: #ef5d5d;
+$red-3: rgb(221 0 65 / 70%);
+$red-4: rgb(221 0 65 / 90%);
+$red-5: #ffe6e6;
+$red-6: #a91111;
+$red-7: #fee6e6;
+$red-8: #ff6578;
+$red-9: #ffe5e5;
+$red-10: #ff7880;
+$red-accent-2: #de2345;
+$red-color: #e71616;
+$red-error-background: #fcdada;
+$red-light: #ff4141;
+$red-lighten-1: #fddddd;
+$red-lighten-2: #ffa7a7;
+$red-lighten-3: #fff3f7;
+$red-lighten-4: #ededed;
+$red-o3: #dd0041e5;
+$secondary: #fdcc4a;
+$secondary-1: #fdcc4a33;
+$shadow-1: #0000000d;
+$shadow-2: #0908080a;
+$shadow-3: #ffffff4c;
+$shadow-4: #0000001d;
+$shadow-5: #1011140d;
+$status-error: #da1414;
+$status-neutral: #a5abb3;
+$status-success: #287d3c;
+$status: #2e5aac;
+$transparent: #00000000;
+$violet: #775dd0;
+$yellow-1: #fbad17;
+$yellow-2: #ffba33;
+$yellow-3: #ffd953;
+$yellow-4: #ffc350;
+$yellow-5: #f6931e;
+$yellow-6: #feb019;
+$yellow-7: #f9d863;
+$yellow-8: #ffce20;
+$yellow-9: #f6c61e;
+$yellow-10: #f9b732;
+$yellow-background: #fffae7;
+$yellow-lighten-1: #fffdd6;
+$yellow-lighten-2: #fff5db;
+$yellow-lighten-3: #f9f2df;
+$yellow-lighten-4: #f9f8df;
+
+$error: $red-accent-2;
+$colors: (
+  #a288d1,
+  #aaa85b,
+  #d26d98,
+  #3d9a2c,
+  #713733,
+  #87bb29,
+  #c78d97,
+  #dd3f29,
+  #508c73,
+  #eb4d14,
+  #5691a5,
+  #cf6a2e,
+  #397043,
+  #ae4ded,
+  #c69a6d,
+  #512198,
+  #476023,
+  #d73d85,
+  #3f4222,
+  #6c38cd,
+  #aa8b6e,
+  #766beb,
+  #92ab6b,
+  #56327e,
+  #cdb623,
+  #67344e,
+  #4acd2c,
+  #b785a6,
+  #50cc59,
+  #48486c,
+  #d03e3b,
+  #6e9acb,
+  #873519,
+  #49bcb1,
+  #d9764c,
+  #43bcd8,
+  #da745e,
+  #6481e3,
+  #8aa679,
+  #5854bb,
+  #cb8675,
+  #d640d2,
+  #745127,
+  #d542ac,
+  #938d2c,
+  #45538c,
+  #e28723,
+  #ab8bba,
+  #a6681a,
+  #7c2b65,
+  #88b144,
+  #882541,
+  #5abc68,
+  #c770bc,
+  #76641f,
+  #b664d3,
+  #49be8a,
+  #dc3562,
+  #5694da,
+  #d5a24e,
+  #d37581,
+  #bea732,
+  #bd5155,
+  #508633,
+  #c1884d
+);
+
+:export {
+  bluecolor: $blue-color;
+  bluecolor2: $blue-2;
+  bluecolor3: $blue-3;
+  bluecolor4: $blue-4;
+  bluecolor7: $blue-7;
+  bluecolor8: $blue-8;
+  colors: $colors;
+  error: $red-accent-2;
+  graycolor: $gray-color;
+  graycolor2: $gray-2;
+  greencolor: $green-color;
+  greencolor1: $green-1;
+  greencolor2: $green-2;
+  greencolor3: $green-3;
+  greencolor4: $green-4;
+  greencolor5: $green-5;
+  greencolor8: $green-8;
+  greencolor10: $green-10;
+  greencolor15: $green-15;
+  neutral: $neutral;
+  neutral1: $neutral-1;
+  neutral11: $neutral-11;
+  neutral2: $neutral-2;
+  neutral3: $neutral-3;
+  neutral4: $neutral-4;
+  neutral5: $neutral-5;
+  neutral6: $neutral-6;
+  neutral7: $neutral-7;
+  neutral8: $neutral-8;
+  orangecolor: $orange-color;
+  orangecolor3: $orange-3;
+  orangecolor4: $orange-4;
+  orangecolor5: $orange-5;
+  pinkcolor2: $pink-2;
+  primary: $primary;
+  purple: $purple;
+  purple1: $purple-1;
+  purple2: $purple-2;
+  redaccent2: $red-accent-2;
+  redcolor: $red-color;
+  redcolor10: $red-10;
+  redcolor2: $red-2;
+  redcolor3: $red-3;
+  redcolor4: $red-4;
+  redcolor5: $red-5;
+  redcolor6: $red-6;
+  redcolor7: $red-7;
+  redcolor8: $red-8;
+  redcolor9: $red-9;
+  redcolor12: $red-12;
+  secondary: $secondary;
+  secondary1: $secondary-1;
+  statuserror: $status-error;
+  violet: $violet;
+  yellowcolor: $yellow-1;
+  yellowcolor1: $yellow-1;
+  yellowcolor2: $yellow-2;
+  yellowcolor3: $yellow-3;
+  yellowcolor4: $yellow-4;
+  yellowcolor5: $yellow-5;
+  yellowcolor6: $yellow-6;
+  yellowcolor8: $yellow-8;
+  yellowcolor9: $yellow-9;
+  yellowLigthenColor3: $yellow-lighten-3;
+  yellowLigthenColor4: $yellow-lighten-4;
+}
